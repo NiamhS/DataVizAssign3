@@ -60,6 +60,11 @@
 	 * increment by 1 each time
 	 */
 	
+	function sortCities(citiesToSort){
+	
+	var capitalCities = []
+	var regionalCities = []
+	
 	for(var i=0;i<6;i++){
 		
 		var item = citiesToSort [i];
@@ -74,5 +79,18 @@
 		}//end of if/else statement
 		
 	}// end of 'for loop'
+	
+	}//end of sortCities function
+	
+	var myfirstcapitalCities = sortCities(cities);
+	
+	console.log(myfirstcapitalCities);
+	
+	var mysecondcapitalCities = sortCities(cities2);
+	
+	console.log(mysecondcapitalCities);
+	
+	sortCities(cities);	
+	sortCities(cities2);
 	
 </script>
