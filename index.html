@@ -32,6 +32,27 @@
 		type : "regional"
 	}];
 	
+	/*
+	 * this is a "for loop"
+	 * it has round parens, which indicate that it's a function
+	 * 
+	 * this loop is starting at indez zero, ending before index 7 (ie. at index 6)
+	 * increment by 1 each time
+	 */
 	
+	for(var i=0;i<6;i++){
+		
+		var item = citiesToSort [i];
+		
+		if(item.type=="capital"){
+			
+			capitalCities.push(item);
+			
+		}else{
+			
+			regionalCities.push(item);
+		}//end of if/else statement
+		
+	}// end of 'for loop'
 	
 </script>
